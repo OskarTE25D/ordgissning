@@ -21,3 +21,4 @@ def ordlst():
     #paste ordlista här^
     ordlista = ord.upper().split()
     return ordlista
+print(ordlst())

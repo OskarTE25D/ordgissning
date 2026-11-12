@@ -2,8 +2,11 @@
 #from ordlista import ordlst
 #import random
 
-#1 hej och välkommen type shit
+n = 0   # OBS! PLACEHOLDER
 
+#1 hej och välkommen type shit
+print("Välkommen till ordgissnings-spelet!")
+print(f"Du ska gissa ett ord, bokstav för bokstav, på {n} bokstäver")  
 
 #2 slumpa ett ord from ordlst()-funktionen i ordlista.py
 

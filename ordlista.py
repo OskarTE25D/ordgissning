@@ -1,5 +1,5 @@
 import random
-def ord_slump():
+def ord_slump():  # sourcery skip: inline-immediately-returned-variable
     ord = """äpple päron bananer huset bilen katten hunden solen månen stjärna bordet stolen golvet taket vägen havet sjöar
     skogar blommor fiskar fågel hästar korna grisar lampa fönster dörrar nyckel klocka pennor böcker papper sudda linjal skolan
     klassrum lärare elever barnen vuxen pojke flicka mamma pappa syster broder morfar farmor farfar mormor vänner kompis glädje
@@ -20,12 +20,6 @@ def ord_slump():
     koka steka njuta resa promenera springtur cykeltur solnedgång frukost middag kvällsmat mellanmål choklad glass pannkaka
     smörgås gurka tomater potatis morötter jordgubbe hallon blåbär lingon"""
     #paste ordlista här^
-<<<<<<< Updated upstream
-    ordlista = ord.upper().split()
-    return ordlista
-print(ordlst())
-=======
     slump_ord = random.choice(ord.upper().split())
     return slump_ord
 #anropas i main som: svar=slump_ord()
->>>>>>> Stashed changes

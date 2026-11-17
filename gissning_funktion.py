@@ -1,15 +1,18 @@
-def gissa(ord,shh_ord,felgissningar):
+def gissa(ord, shh_ord, felgissningar):
     while True:
         if len(felgissningar) == 10:
             print("Du suger!")
             break
-        gissning = input("Ange en gissning: ").upper().split()
+        gissning = input("Ange en gissning: ").upper()
+        hittad = False
         for char in ord:
             for pos in range(len(ord)):
-                shh_ord = replace_str(shh_ord, pos, char)
-                
-    return shh_ord,felgissningar
-print(gissa("banan", "*****", ""))
+                if ord[pos].upper() == gissning:
+                    shh_ord = shh_ord[:pos] + gissning + shh_ord[pos+1:]
+                    hittad = True
+        if not hittad:
+            felgissningar += gissning
+        return shh_ord, felgissningar
 
 #ord=svaret
 #shh_ord=strängen som fylls i av rätt gissning

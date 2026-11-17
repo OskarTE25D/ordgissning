@@ -1,5 +1,5 @@
 #from gissning_funktion import gissa
-#from ordlista import ordlst
+from ordlista import ord_slump
 #import random
 
 n = 0   # OBS! PLACEHOLDER
@@ -9,7 +9,7 @@ print("Välkommen till ordgissnings-spelet!")
 print(f"Du ska gissa ett ord, bokstav för bokstav, på {n} bokstäver")  
 
 #2 slumpa ett ord from ordlst()-funktionen i ordlista.py
-
+ord = ord_slump()
 
 #3 en loop som anropar gissa()-funktionen i gissning_funktion.py, sedan uppdatera variabler
 

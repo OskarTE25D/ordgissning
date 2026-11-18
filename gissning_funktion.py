@@ -17,7 +17,11 @@ def gissa(ord, shh_ord, felgissningar):
                     shh_ord = shh_ord[:pos] + gissning + shh_ord[pos+1:]
                     hittad = True
         if not hittad:
-            felgissningar += gissning
+            if gissning in felgissningar:
+                print("Denna bokstav finns redan!")
+                continue
+            else:
+                felgissningar += gissning
         return shh_ord, felgissningar
 
 #ord=svaret

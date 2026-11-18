@@ -3,7 +3,13 @@ def gissa(ord, shh_ord, felgissningar):
         if len(felgissningar) == 10:
             print("Du suger!")
             break
-        gissning = input("Ange en gissning: ").upper()
+        while True:
+            gissning = input("Ange en gissning: ").upper()
+            if gissning.isalpha() == False or len(gissning) > 1:
+                print("Gissningen ska vara en bokstav!")
+                continue
+            else:
+                break
         hittad = False
         for char in ord:
             for pos in range(len(ord)):

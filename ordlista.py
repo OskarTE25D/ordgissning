@@ -22,4 +22,4 @@ def ord_slump():  # sourcery skip: inline-immediately-returned-variable
     #paste ordlista här^
     slump_ord = random.choice(ord.upper().split())
     return slump_ord
-#anropas i main som: svar=slump_ord()
+#anropas i main som: svar = ord_slump()

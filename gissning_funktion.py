@@ -4,7 +4,7 @@ def gissa(ord, shh_ord, felgissningar):
             print("Du suger!")
             break
         while True:
-            gissning = input("Ange en gissning: ").upper() #upper gör bokstäverna stora för att göra inmatning enklare
+            gissning = input("Ange en gissning: ").upper().replace(" ", "") #upper gör bokstäverna stora för att göra inmatning enklare
             if gissning.isalpha() == False or len(gissning) > 1: #om man matar in något som inte är en bokstav eller en sträng längre än 1 bokstav
                 print("Gissningen ska vara en bokstav!")
                 continue

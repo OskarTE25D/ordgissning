@@ -26,7 +26,7 @@ while spela_igen == "j": #loop som kollar ifall man vill köra igen/startar spel
     if shh_ord == ord.upper(): #kollar ifall man vunnit efter tidigare while-loopen säger att man har vunnit eller förlorat
         print("Du vann!")
     else:
-        print("Du förlorade!")
+        print(f"Du förlorade! Ordet var {ord}!")
 
     spela_igen = input("Vill du spela igen? (j/n): ").lower() #frågar användaren ifall de vill spela igen
 
